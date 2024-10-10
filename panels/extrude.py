@@ -1,18 +1,14 @@
 import logging
 import re
-
 import gi
 
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk, Pango
-
 from ks_includes.KlippyGcodes import KlippyGcodes
 from ks_includes.screen_panel import ScreenPanel
 
-
 def create_panel(*args):
     return ExtrudePanel(*args)
-
 
 class ExtrudePanel(ScreenPanel):
 
@@ -22,6 +18,8 @@ class ExtrudePanel(ScreenPanel):
         macros = self._printer.get_gcode_macros()
         self.load_filament = any("LOAD_FILAMENT" in macro.upper() for macro in macros)
         self.unload_filament = any("UNLOAD_FILAMENT" in macro.upper() for macro in macros)
+        self.unload_filament = any("STATUS_READY" in macro.upper() for macro in macros)
+        self.unload_filament = any("STATUS_LOAD_UNLOAD" in macro.upper() for macro in macros)
 
         self.speeds = ['1', '3', '5']
         self.distances = ['5', '25', '50', '100']
@@ -232,7 +230,11 @@ class ExtrudePanel(ScreenPanel):
 
     def extrude(self, widget, direction):
         self._screen._ws.klippy.gcode_script(KlippyGcodes.EXTRUDE_REL)
+        self._screen._send_action(widget, "printer.gcode.script",
+                                  {"script": "STATUS_load_unload"})
         self._screen._ws.klippy.gcode_script(KlippyGcodes.extrude(f"{direction}{self.distance}", f"{self.speed * 60}"))
+        self._screen._send_action(widget, "printer.gcode.script",
+                                  {"script": f"STATUS_ready"})
 
     def load_unload(self, widget, direction):
         if direction == "-":

@@ -20,34 +20,34 @@ button:active {
 
 .button_active {
     background-color: rgba(0,0,0,0);
-    border-color: #8D1D22;
-    border-style: dashed;
-    border-width: .25em;
-    border-radius: 0.5em;
+    border-color: #FF0000;
+    border-style: dashed solid;
+    border-width: .15em;
+    border-radius: 0.0em;
 }
 
 button.color1 {
     background-color: rgba(0,0,0,0.5);
     border-color: #FF0000;
-    border-radius: 0.5em;
+    border-radius: 0.0em;
 }
 
 button.color2 {
     background-color: rgba(0,0,0,0.5);
     border-color: #FF0000;
-    border-radius: 0.5em;
+    border-radius: 0.0em;
 }
 
 button.color3 {
     background-color: rgba(0,0,0,0.5);
     border-color: #FF0000;
-    border-radius: 0.5em;
+    border-radius: 0.0em;
 }
 
 button.color4 {
     background-color: rgba(0,0,0,0.5);
     border-color: #FF0000;
-    border-radius: 0.5em;
+    border-radius: 0.0em;
 }
 
 button.color1:active, button.color2:active, button.color3:active, button.color4:active, button.update:active, button.invalid:active, .dialog button:active {
@@ -61,17 +61,17 @@ button.active {
 button.update {
     background-color: rgba(0,0,0,0.5);
     border: 0;
-    border-bottom: .3em solid;
+    border-bottom: 0em solid;
     border-bottom-color: #8D0000;
-    border-radius: .75em;
+    border-radius: 0em;
 }
 
 button.invalid {
     background-color: rgba(0,0,0,0.5);
     border: 0;
-    border-bottom: .3em solid;
+    border-bottom: 0em solid;
     border-bottom-color: #B71C1C;
-    border-radius: .75em;
+    border-radius: 0em;
 }
 
 combobox box button {

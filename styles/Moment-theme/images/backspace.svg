@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="uuid-8a0703f1-92a1-4116-84e7-0cf2be88926e" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<svg xmlns="http://www.w3.org/2000/svg" width="8.5mm" height="8.5mm" version="1.1" viewBox="0 0 24 24">
   <defs>
     <style>
-      .uuid-bacdea5a-80e4-43a0-b502-4cc807c1f6f8 {
+      .cls-1 {
         fill: none;
         stroke: #e2e2e2;
         stroke-linecap: round;
@@ -11,5 +11,20 @@
       }
     </style>
   </defs>
-  <path class="uuid-bacdea5a-80e4-43a0-b502-4cc807c1f6f8" d="m9,9l3,3m0,0l3,3m-3-3l-3,3m3-3l3-3m-3,12c-4.971,0-9-4.029-9-9S7.029,3,12,3s9,4.029,9,9-4.029,9-9,9Z"/>
+  <!-- Generator: Adobe Illustrator 28.7.0, SVG Export Plug-In . SVG Version: 1.2.0 Build 136)  -->
+  <g>
+    <g id="uuid-8a0703f1-92a1-4116-84e7-0cf2be88926e">
+      <g>
+        <g id="Arrow__x2F__Chevron_x5F_Left">
+          <path id="Vector" class="cls-1" d="M8.3,19l-5-7,5-7h12.4v14h-12.4Z"/>
+        </g>
+        <g>
+          <line class="cls-1" x1="11.4" y1="9.6" x2="13.8" y2="12"/>
+          <line class="cls-1" x1="13.8" y1="12" x2="16.1" y2="14.4"/>
+          <line class="cls-1" x1="13.8" y1="12" x2="11.4" y2="14.4"/>
+          <line class="cls-1" x1="13.8" y1="12" x2="16.1" y2="9.6"/>
+        </g>
+      </g>
+    </g>
+  </g>
 </svg>
