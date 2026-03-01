@@ -1,6 +1,6 @@
 # Moment KlipperScreen   
 
-![Moment_klipperscreen](https://github.com/MOMENT3D/KlipperScreen/assets/139463388/5b4a9e54-6b81-4a74-aad4-ffd6bf25a68a)
+![Moment Klipperscreen v2](https://github.com/user-attachments/assets/ac7fb3f3-34f5-490e-bc96-3b064e739590)
 
 Moment KlipperScreen is an open source Screen for FDM printers.   
 Moment KlipperScreen is based on klipperScreen.
