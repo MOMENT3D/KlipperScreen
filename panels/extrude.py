@@ -205,14 +205,18 @@ class Panel(ScreenPanel):
         self.content.add(self.labels['extrude_menu'])
 
     def enable_buttons(self, enable):
+        temp = float(self._printer.get_stat(self.current_extruder, 'temperature'))
+        
+        if temp < 200:
+            enable = False
+
         for button in self.buttons:
-            # Added "pressure" check for safety
             if button in ("pressure", "retraction", "spoolman", "temperature"):
                 continue
             self.buttons[button].set_sensitive(enable)
-
+    
     def activate(self):
-        self.enable_buttons(self._printer.state in ("ready", "paused"))
+        self.enable_buttons(self._printer.state in ("ready", "paused", "idle"))
 
     def process_update(self, action, data):
         if action == "notify_gcode_response":
@@ -221,8 +225,10 @@ class Panel(ScreenPanel):
             elif "action:resumed" in data:
                 self.enable_buttons(False)
             return
+
         if action != "notify_status_update":
             return
+
         for x in self._printer.get_tools():
             if x in data:
                 self.update_temp(
@@ -231,6 +237,9 @@ class Panel(ScreenPanel):
                     self._printer.get_stat(x, "target"),
                     self._printer.get_stat(x, "power"),
                 )
+        is_not_printing = self._printer.state in ("ready", "paused", "idle")
+        self.enable_buttons(is_not_printing)
+
         if "current_extruder" in self.labels:
             self.labels["current_extruder"].set_label(self.labels[self.current_extruder].get_label())
 
