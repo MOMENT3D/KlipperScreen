@@ -98,7 +98,7 @@ msgid "Bed Level"
 msgstr "베드 레벨링"
 
 msgid "Bed Mesh"
-msgstr "배드 메쉬"
+msgstr "배드 평탄도"
 
 msgid "Both"
 msgstr "둘 다"
@@ -884,7 +884,7 @@ msgid "This panel supports up-to 9 screws in a 3x3 Grid"
 msgstr "이 패널은 3x3 그리드에서 최대 9개의 스크류를 지원합니다"
 
 msgid "This will affect screw positions and mesh graph"
-msgstr "Z스크류 위치 및 메쉬 그래프에 영향을 미칩니다"
+msgstr "Z스크류 위치 및 평탄도 그래프에 영향을 미칩니다"
 
 msgid "Timeout for screen black-out or power-off"
 msgstr "화면이 꺼지거나 전원이 꺼지는 시간 제한"
@@ -1042,7 +1042,7 @@ msgid "Z-aixs,tilt Calibrating..."
 msgstr "Z축, 기울기 교정중..."
 
 msgid "Meshing..."
-msgstr "메쉬 측정중..."
+msgstr "ベッドの平坦度を測定中..."
 
 msgid "Cleaning..."
 msgstr "노즐 청소중..."

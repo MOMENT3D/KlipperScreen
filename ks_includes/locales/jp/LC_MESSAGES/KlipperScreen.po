@@ -98,7 +98,7 @@ msgid "Bed Level"
 msgstr "ベッドレベル"
 
 msgid "Bed Mesh"
-msgstr "ベッドメッシュ"
+msgstr "ベッドの平坦さ"
 
 msgid "Bed screw configuration:"
 msgstr "ベッドスクリュー設定:"
@@ -883,7 +883,7 @@ msgid "This panel supports up-to 9 screws in a 3x3 Grid"
 msgstr "このパネルは3x3グリッドで最大9本のスクリューをサポートします"
 
 msgid "This will affect screw positions and mesh graph"
-msgstr "Zスクリューの位置やメッシュグラフに影響を与えます"
+msgstr "Zスクリューの位置と平坦度グラフに影響を与えます"
 
 msgid "Timeout for screen black-out or power-off"
 msgstr "画面が消える、または電源が切れる時間制限"
