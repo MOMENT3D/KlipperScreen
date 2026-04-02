@@ -503,7 +503,9 @@ class Panel(ScreenPanel):
 
         if "display_status" in data and "message" in data["display_status"]:
             if data['display_status']['message']:
-                self.labels['lcdmessage'].set_label(f"{data['display_status']['message']}")
+                raw_msg = data['display_status']['message']
+                translated_msg = _(raw_msg) 
+                self.labels['lcdmessage'].set_label(f"{translated_msg}")
                 self.labels['lcdmessage'].show()
             else:
                 self.labels['lcdmessage'].hide()

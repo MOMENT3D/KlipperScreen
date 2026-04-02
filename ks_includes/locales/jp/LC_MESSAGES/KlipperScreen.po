@@ -1032,7 +1032,67 @@ msgid "Auxiliary Fan"
 msgstr "サブファン"
 
 msgid "Chamber"
-msgstr "チャンバーヒーター"
+msgstr "チャンバー"
+
+msgid "Z_Calbrating..."
+msgstr "Z_計算中..."
+
+msgid "Tilting..."
+msgstr "傾き補正中..."
+
+msgid "Z-aixs,tilt Calibrating..."
+msgstr "Z軸、傾きの校正中..."
+
+msgid "Meshing..."
+msgstr "メッシュ測定中..."
+
+msgid "Cleaning..."
+msgstr "ノズル清掃中..."
+
+msgid "Printing..."
+msgstr "印刷 進行中..."
+
+msgid "Pause..."
+msgstr "一時停止..."
+
+msgid "No Filament!"
+msgstr "フィラメントがありません！"
+
+msgid "Cancel..."
+msgstr "キャンセル..."
+
+msgid "Finished..."
+msgstr "印刷完了..."
+
+msgid "Please load new filament and resume"
+msgstr "フィラメントを交換して再開してください"
+
+msgid "Unloading filament..."
+msgstr "フィラメントを取り出している最中..."
+
+msgid "Filament unloaded..."
+msgstr "フィラメント取り出し完了..."
+
+msgid "Heating..."
+msgstr "加熱中..."
+
+msgid "Loading filament..."
+msgstr "フィラメントを入れている最中..."
+
+msgid "Filament loaded..."
+msgstr "フィラメントの挿入完了..."
+
+msgid "Stabilizing chamber temp. waiting 10 minutes..."
+msgstr "チャンバー温度の安定化のため、10分間待機中..."
+
+msgid "Stabilizing chamber temp. waiting 8 minutes..."
+msgstr "チャンバー温度の安定化のため、8分間待機中..."
+
+msgid "Stabilizing chamber temp. waiting 6 minutes..."
+msgstr "チャンバー温度の安定化のため、6分間待機中..."
+
+msgid "Stabilizing chamber temp. waiting 3 minutes..."
+msgstr "チャンバー温度の安定化のため、3分間待機中..."
 
 #~ msgid "Disable XY"
 #~ msgstr "XY軸制御の無効化"
