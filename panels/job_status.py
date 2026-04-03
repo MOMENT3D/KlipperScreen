@@ -76,20 +76,21 @@ class Panel(ScreenPanel):
         self.labels['height_lbl'] = Gtk.Label(_("Height:"))
         self.labels['layer_lbl'] = Gtk.Label(_("Layer:"))
 
-        for fan in self._printer.get_fans():
-            # fan_types = ["controller_fan", "fan_generic", "heater_fan"]
-            if fan == "fan":
-                name = " "
-            elif fan.startswith("fan_generic"):
-                name = " ".join(fan.split(" ")[1:])[:1].upper() + ":"
-                if name.startswith("_"):
-                    continue
-            else:
-                continue
-            self.fans[fan] = {
-                "name": name,
-                "speed": "-"
-            }
+        self.fans = {} 
+        # for fan in self._printer.get_fans():
+        #     # fan_types = ["controller_fan", "fan_generic", "heater_fan"]
+        #     if fan == "fan":
+        #         name = " "
+        #     elif fan.startswith("fan_generic"):
+        #         name = " ".join(fan.split(" ")[1:])[:1].upper() + ":"
+        #         if name.startswith("_"):
+        #             continue
+        #     else:
+        #         continue
+        #     self.fans[fan] = {
+        #         "name": name,
+        #         "speed": "-"
+        #     }
 
         self.labels['file'] = Gtk.Label(label="Filename", hexpand=True)
         self.labels['file'].get_style_context().add_class("printing-filename")
@@ -146,13 +147,15 @@ class Panel(ScreenPanel):
             'speed': self._gtk.Button("speed+", "-", None, self.bts, Gtk.PositionType.LEFT, 1),
             'z': self._gtk.Button("home-z", "-", None, self.bts, Gtk.PositionType.LEFT, 1),
             'extrusion': self._gtk.Button("extrude", "-", None, self.bts, Gtk.PositionType.LEFT, 1),
-            'fan': self._gtk.Button("fan", "-", None, self.bts, Gtk.PositionType.LEFT, 1),
+            # 'fan': self._gtk.Button("fan", "-", None, self.bts, Gtk.PositionType.LEFT, 1),
             'elapsed': self._gtk.Button("clock", "-", None, self.bts, Gtk.PositionType.LEFT, 1),
             'left': self._gtk.Button("hourglass", "-", None, self.bts, Gtk.PositionType.LEFT, 1),
         }
         for button in buttons:
             buttons[button].set_halign(Gtk.Align.START)
-        buttons['fan'].connect("clicked", self.menu_item_clicked, {"panel": "fan"})
+
+        # if 'fan' in buttons:
+        #     buttons['fan'].connect("clicked", self.menu_item_clicked, {"panel": "fan"})
         self.buttons.update(buttons)
 
         self.buttons['extruder'] = {}
@@ -224,9 +227,10 @@ class Panel(ScreenPanel):
         szfe.attach(self.buttons['speed'], 0, 0, 3, 1)
         szfe.attach(self.buttons['z'], 2, 0, 2, 1)
         if self._printer.get_tools():
-            szfe.attach(self.buttons['extrusion'], 0, 1, 3, 1)
-        if self._printer.get_fans():
-            szfe.attach(self.buttons['fan'], 2, 1, 2, 1)
+            szfe.attach(self.buttons['extrusion'], 0, 1, 4, 1) 
+        
+        # if self._printer.get_fans():
+        #     szfe.attach(self.buttons['fan'], 2, 1, 2, 1)
 
         info = Gtk.Grid(row_homogeneous=True)
         info.get_style_context().add_class("printing-info")
@@ -568,12 +572,12 @@ class Panel(ScreenPanel):
                 self.buttons['speed'].set_label(self.labels['req_speed'].get_label())
             if 'live_extruder_velocity' in data['motion_report']:
                 self.flowstore.append(self.fila_section * float(data["motion_report"]["live_extruder_velocity"]))
-        fan_label = ""
-        for fan in self.fans:
-            self.fans[fan]['speed'] = f"{self._printer.get_fan_speed(fan) * 100:3.0f}%"
-            fan_label += f" {self.fans[fan]['name']}{self.fans[fan]['speed']}"
-        if fan_label:
-            self.buttons['fan'].set_label(fan_label[:12])
+        #fan_label = ""
+        #for fan in self.fans:
+        #    self.fans[fan]['speed'] = f"{self._printer.get_fan_speed(fan) * 100:3.0f}%"
+        #    fan_label += f" {self.fans[fan]['name']}{self.fans[fan]['speed']}"
+        #if fan_label:
+        #    self.buttons['fan'].set_label(fan_label[:12])
         if "print_stats" in data:
             if 'state' in data['print_stats']:
                 self.set_state(

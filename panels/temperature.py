@@ -219,7 +219,9 @@ class Panel(ScreenPanel):
         if self.extra_selection:
             selection.append(self.extra_selection)
         elif self._printer.state not in ("printing", "paused"):
-            selection.extend(self._printer.get_temp_devices())
+            for device in self._printer.get_temp_devices():
+                if device.startswith("extruder"):
+                    selection.append(device)
         elif 'toolhead' in self._printer.data and 'extruder' in self._printer.data['toolhead']:
             current_extruder = self._printer.data['toolhead']['extruder']
             selection.append(current_extruder)
