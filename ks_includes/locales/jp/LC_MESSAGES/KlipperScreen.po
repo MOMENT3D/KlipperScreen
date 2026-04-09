@@ -1034,6 +1034,9 @@ msgstr "サブファン"
 msgid "Chamber"
 msgstr "チャンバー"
 
+msgid "PTC_housing"
+msgstr "PTCハウジング"
+
 msgid "Z_Calbrating..."
 msgstr "Z_計算中..."
 
