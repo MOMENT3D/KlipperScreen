@@ -1094,6 +1094,9 @@ msgstr "チャンバー温度の安定化のため、6分間待機中..."
 msgid "Stabilizing chamber temp. waiting 3 minutes..."
 msgstr "チャンバー温度の安定化のため、3分間待機中..."
 
+msgid "Lock the door, heating the chamber..."
+msgstr "ドアロック、チャンバー加熱中..."
+
 #~ msgid "Disable XY"
 #~ msgstr "XY軸制御の無効化"
 
