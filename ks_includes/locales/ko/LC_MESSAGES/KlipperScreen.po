@@ -1032,7 +1032,7 @@ msgstr "보조 팬"
 msgid "Chamber"
 msgstr "챔버히터"
 
-msgid "PTC_housing"
+msgid "PTC housing"
 msgstr "PTC하우징"
 
 msgid "Z_Calbrating..."
