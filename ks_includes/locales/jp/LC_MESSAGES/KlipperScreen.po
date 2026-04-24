@@ -1100,6 +1100,15 @@ msgstr "チャンバー温度の安定化のため、3分間待機中..."
 msgid "Lock the door, heating the chamber..."
 msgstr "ドアロック、チャンバー加熱中..."
 
+msgid "Spoolman"
+msgstr "スプールマン"
+
+msgid "Runout Sensor"
+msgstr "フィラメント検知センサー"
+
+msgid "Runout_Sensor"
+msgstr "フィラメント検知センサー"
+
 #~ msgid "Disable XY"
 #~ msgstr "XY軸制御の無効化"
 

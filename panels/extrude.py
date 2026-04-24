@@ -42,7 +42,7 @@ class Panel(ScreenPanel):
             'unload': self._gtk.Button("arrow-up", _("Unload"), "color2"),
             'retract': self._gtk.Button("retract", _("Retract"), "color1"),
             'temperature': self._gtk.Button("heat-up", _("Temperature"), "color4"),
-            'spoolman': self._gtk.Button("spoolman", "Spoolman", "color3"),
+            'spoolman': self._gtk.Button("spoolman", _("Spoolman"), "color3"),
             # 'pressure': self._gtk.Button("settings", _("Pressure Advance"), "color2"),
             'retraction': self._gtk.Button("settings", _("Retraction"), "color1")
         }
@@ -155,9 +155,11 @@ class Panel(ScreenPanel):
             if s > 8:
                 break
             name = x.split(" ", 1)[1].strip()
+            display_name = _("Runout_Sensor") if name == "Runout_Sensor" else self.prettify(name)
+
             self.labels[x] = {
                 'label': Gtk.Label(
-                    label=self.prettify(name), hexpand=True, halign=Gtk.Align.CENTER,
+                    label=display_name, hexpand=True, halign=Gtk.Align.CENTER,
                     ellipsize=Pango.EllipsizeMode.START),
                 'box': Gtk.Box()
             }

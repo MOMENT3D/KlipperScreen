@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="22.6mm" height="22.6mm" baseProfile="tiny" version="1.2" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Generator: Adobe Illustrator 29.8.4, SVG Export Plug-In . SVG Version: 2.1.1 Build 6)  -->
+  <g id="svg8" inkscape:version="1.2.2 (b0a8486541, 2022-12-01)">
+    <sodipodi:namedview id="namedview8" bordercolor="#666666" borderopacity="1.0" inkscape:current-layer="g6874" inkscape:cx="7.0860489" inkscape:cy="35.183057" inkscape:deskcolor="#d1d1d1" inkscape:pagecheckerboard="0" inkscape:pageopacity="1" inkscape:showpageshadow="2" inkscape:window-height="826" inkscape:window-maximized="1" inkscape:window-width="1600" inkscape:window-x="0" inkscape:window-y="0" inkscape:zoom="6.0682618" pagecolor="#002b36" showgrid="false"/>
+    <g>
+      <path id="path2" d="M32,5c14.9,0,27,12.1,27,27s-12.1,27-27,27S5,46.9,5,32,17.1,5,32,5Z" vector-effect="non-scaling-stroke" fill="#e2e1e1"/>
+      <path id="path7" d="M12.5,21c-.5-.3-.9-.8-1-1.4-.1-.6,0-1.2.4-1.7h0c4.4-5.8,10.9-9.6,18.2-10.5h0c.6,0,1.2.1,1.7.5.5.4.7,1,.7,1.6v13.1h.1c0,2.1-1.1,4.1-2.9,5.1-1.8,1.1-4.1,1-5.9,0l-11.3-6.7Z" vector-effect="non-scaling-stroke"/>
+      <path id="path8" d="M15.5,22.7l.4-.7h0c3.5-5.6,9.5-9.1,16.1-9.1h.5s0,9.7,0,9.7h0c0,2.1-1.1,4.1-2.9,5.1s-4.1,1-5.9,0l-8.3-4.9Z" vector-effect="non-scaling-stroke" fill="red"/>
+      <path id="path5" d="M32.5,54.9c0,.6-.3,1.2-.7,1.6-.5.4-1.1.6-1.7.5h0c-7.2-.9-13.8-4.7-18.2-10.5h0c-.4-.5-.5-1.1-.4-1.7.1-.6.5-1.1,1-1.4l11.3-6.7h0c1.8-1.1,4.1-1.1,5.9,0,1.8,1.1,2.9,3,2.9,5.1v13.1Z" vector-effect="non-scaling-stroke"/>
+      <path id="path6" d="M32.5,51.5h-.8c-6.6-.2-12.6-3.8-16-9.4l-.2-.4,8.3-4.9h0c1.8-1.1,4.1-1.1,5.9,0s2.9,3,2.9,5.1v9.7Z" vector-effect="non-scaling-stroke" fill="red"/>
+      <path id="path3" d="M51.5,20.5c.5-.3,1.2-.4,1.7-.2.6.2,1,.6,1.3,1.2h0c2.8,6.7,2.8,14.3,0,21h0c-.2.6-.7,1-1.3,1.2-.6.2-1.2.1-1.7-.2l-11.4-6.4h0c-1.8-1-3-3-3-5.1,0-2.1,1.1-4,3-5.1l11.4-6.4Z" vector-effect="non-scaling-stroke"/>
+      <path id="path4" d="M48.6,22.2l.4.7h0c3.1,5.8,3.1,12.8-.2,18.5l-.2.4-8.4-4.8h0c-1.8-1-3-3-3-5.1s1.1-4,3-5.1l8.4-4.7Z" vector-effect="non-scaling-stroke" fill="red"/>
+    </g>
+  </g>
+</svg>
